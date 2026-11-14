@@ -22,7 +22,14 @@ menizstudio-web/
    (AdMob app-ads.txt'yi bu alandan doğrular).
 4. Harici kaynak yalnız Google Fonts (Baloo 2, oyunla aynı yazı tipi).
 
-## Yayın adımları (kullanıcı)
+## Canlı kurulum (2026-11-14)
+- Depo: **github.com/Smenizz/menizstudio-web** (herkese açık), GitHub Pages main / kök, CNAME dosyası = menizstudio.com, .nojekyll.
+  Güncelleme: dosyayı değiştir → `git add -A && git commit -m … && git push` → Pages 1–2 dk'da yayınlar. gh oturumu: Smenizz.
+- Alan adı Squarespace Domains'te (NS nsc1–4.squarespacedns.com). E-posta Google Workspace (MX smtp.google.com + SPF TXT) — DNS'te
+  "Google Workspace" grubuna DOKUNMA. Web: "Squarespace Defaults" grubu silinir, Custom Records: @ A 185.199.108–111.153 (4 kayıt),
+  www CNAME smenizz.github.io. Sonra `gh api -X PUT repos/Smenizz/menizstudio-web/pages -F https_enforced=true`.
+
+## Yayın adımları (genel)
 - **GitHub Pages:** yeni herkese açık depo → bu klasörün içeriğini yükle → Settings → Pages → Branch main / root →
   Custom domain `menizstudio.com` → alan adı firmasının DNS panelinde: `A` kayıtları 185.199.108.153, 185.199.109.153,
   185.199.110.153, 185.199.111.153 ve `www` için `CNAME <kullanici>.github.io` → "Enforce HTTPS".
