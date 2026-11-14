@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meniz Studio</title>
+<meta name="description" content="Meniz Studio makes colorful cartoon games for mobile. Our first game: Haggle Motors, a car dealer haggling simulator.">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1d1b26;
+    --paper: #fff6e6;
+    --sun-1: #ff8a3d;
+    --sun-2: #ffb347;
+    --sun-3: #ffd36b;
+    --accent: #b5461f;
+    --muted: #6b6575;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Baloo 2", system-ui, sans-serif;
+    color: var(--ink);
+    background: linear-gradient(180deg, var(--sun-1) 0%, var(--sun-2) 45%, var(--sun-3) 100%) fixed;
+    min-height: 100vh;
+  }
+  main { max-width: 960px; margin: 0 auto; padding: 32px 16px 48px; }
+  header { display: flex; align-items: center; gap: 16px; }
+  header img { width: 72px; height: 72px; }
+  header h1 { margin: 0; font-size: 2rem; font-weight: 800; letter-spacing: 0.5px; }
+  .tagline { margin: 0; color: var(--ink); opacity: 0.8; font-weight: 600; }
+  .card {
+    margin-top: 32px;
+    background: var(--paper);
+    border: 5px solid var(--ink);
+    border-radius: 28px;
+    box-shadow: 8px 10px 0 rgba(29, 27, 38, 0.35);
+    padding: 28px 24px 24px;
+    text-align: center;
+  }
+  .card img.logo { width: min(560px, 100%); height: auto; }
+  .card h2 { margin: 8px 0 4px; font-size: 1.5rem; }
+  .card p { margin: 8px auto; max-width: 640px; font-size: 1.1rem; line-height: 1.5; }
+  .soon {
+    display: inline-block; margin-top: 16px; padding: 10px 22px;
+    background: #3fbf5f; color: #fff; border: 4px solid var(--ink); border-radius: 999px;
+    font-weight: 800; font-size: 1.1rem; text-decoration: none;
+  }
+  .tr { color: var(--muted); }
+  footer { margin-top: 32px; text-align: center; font-weight: 600; }
+  footer a { color: var(--ink); }
+  @media (max-width: 480px) {
+    header h1 { font-size: 1.6rem; }
+    .card { padding: 20px 14px; border-radius: 22px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="/img/meniz.png" alt="Meniz Studio monogram">
+    <div>
+      <h1>Meniz Studio</h1>
+      <p class="tagline">Colorful cartoon games for mobile</p>
+    </div>
+  </header>
+
+  <section class="card">
+    <img class="logo" src="/img/haggle-motors.webp" alt="Haggle Motors logo">
+    <h2>Haggle Motors: Car Dealer Sim</h2>
+    <p>Run your own used-car dealership. Read your customers' faces, haggle hard, inspect every car with a paint gauge, fix it up and flip it for profit. Collect 256 original cars and grow from a back-street lot to the luxury boulevard.</p>
+    <p class="tr">Kendi ikinci el araba galerini işlet: müşterinin yüzünden oku, pazarlık yap, arabayı muayene et, tamir et ve kârla sat.</p>
+    <!-- Yayından sonra: href="https://play.google.com/store/apps/details?id=com.suleyman.cardealers" ve yazı "Get it on Google Play" -->
+    <span class="soon">Coming soon to Google Play</span>
+  </section>
+
+  <footer>
+    <a href="/privacy/">Privacy Policy</a> ·
+    <a href="mailto:contact@menizstudio.com">contact@menizstudio.com</a>
+  </footer>
+</main>
+</body>
+</html>
